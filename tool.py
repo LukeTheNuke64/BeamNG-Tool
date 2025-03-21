@@ -42,6 +42,7 @@ def update_player():
 
                 if "beamXP" in data and "level" in data["beamXP"]:
                     data["beamXP"]["level"] = 100
+                     updated = True
                 
                 if updated:
                     with file_path.open('w', encoding="utf-8") as file:
